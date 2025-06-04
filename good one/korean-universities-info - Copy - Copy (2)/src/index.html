@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universities in Korea</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Universities in Korea</h1>
+        <h2>Explore top institutions across South Korea.</h2>
+        <button id="darkModeToggle" class="small-btn" style="position:absolute;top:20px;right:20px;">🌙 Dark Mode</button>
+    </header>
+    <nav>
+        <ul>
+            <li><button class="filter" data-region="all">All</button></li>
+            <li><button class="filter" data-region="Seoul">Seoul</button></li>
+            <li><button class="filter" data-region="Busan">Busan</button></li>
+            <li><button class="filter" data-region="Daejeon">Daejeon</button></li>
+            <li><button class="filter" data-region="Gwangju">Gwangju</button></li>
+        </ul>
+        <ul>
+            <li><button class="filter" data-type="national">National</button></li>
+            <li><button class="filter" data-type="private">Private</button></li>
+            <li><button class="filter" data-type="specialized">Specialized</button></li>
+            <li><button class="filter" data-type="international">International</button></li>
+        </ul>
+        <input id="searchBar" type="text" placeholder="Search universities..." style="margin:0 15px; padding:6px 12px; border-radius:5px; border:1px solid #ccc;"/>
+        <button id="loginBtn" class="small-btn">Log In / Sign Up</button>
+        <button id="profileBtn" class="small-btn" style="display:none;">Profile</button>
+    </nav>
+    <!-- Admin Panel -->
+    <div id="adminPanel" style="display:none; margin:20px 0; text-align:center;">
+        <button id="editModeBtn" class="small-btn">Edit Universities</button>
+        <button id="refreshEditBtn" class="small-btn" style="display:none;">Refresh</button>
+        <button id="statsBtn" class="small-btn">Statistics</button>
+        <button id="saveChangesBtn" class="small-btn" style="display:none;">Save Changes</button>
+        <button id="manageUsersBtn" class="small-btn" style="display:none;">Manage Users</button>
+        <div id="statsPanel" style="display:none; margin-top:10px; border:1px solid #ccc; padding:10px; background:#fff;"></div>
+    </div>
+    <main id="university-cards">
+        <!-- University cards will be dynamically loaded here -->
+    </main>
+    <!-- Modal Structure -->
+    <div id="universityModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5);">
+        <div id="modalContent" style="background:#fff; margin:5% auto; padding:20px; width:90%; max-width:500px; position:relative;">
+            <button id="closeModal" style="position:absolute; top:10px; right:10px;">&times;</button>
+            <!-- Modal content will be injected here -->
+        </div>
+    </div>
+    <!-- Add Login Modal -->
+    <div id="loginModal" style="display:none; position:fixed; z-index:2000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5);">
+        <div style="background:#fff; margin:10% auto; padding:20px; width:90%; max-width:350px; position:relative;">
+            <button id="closeLoginModal" style="position:absolute; top:10px; right:10px;">&times;</button>
+            <h3 id="loginTitle">Log In</h3>
+            <input id="loginUsername" type="text" placeholder="Username" style="width:100%;margin-bottom:10px;">
+            <input id="loginPassword" type="password" placeholder="Password" style="width:100%;margin-bottom:10px;">
+            <button id="loginSubmit" style="width:100%;">Log In</button>
+            <p style="text-align:center;margin:10px 0;">
+                <span id="toggleAuthText">Don't have an account?</span>
+                <a href="#" id="toggleAuthLink">Sign Up</a>
+            </p>
+            <p id="loginMsg" style="color:red;text-align:center;margin-top:10px;"></p>
+        </div>
+    </div>
+    <!-- Profile Modal -->
+    <div id="profileModal" style="display:none; position:fixed; z-index:2100; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5);">
+        <div style="background:#fff; margin:10% auto; padding:20px; width:90%; max-width:350px; position:relative;">
+            <button id="closeProfileModal" style="position:absolute; top:10px; right:10px;">&times;</button>
+            <h3>Profile</h3>
+            <div id="profileInfo"></div>
+            <hr>
+            <h4>Favorites</h4>
+            <ul id="favoritesList"></ul>
+            <hr>
+            <h4>Notifications</h4>
+            <input id="gmailInput" type="email" placeholder="Link your Gmail" style="width:100%;margin-bottom:10px;">
+            <button id="saveGmailBtn" style="width:100%;">Save Gmail</button>
+            <p id="gmailMsg" style="color:green;text-align:center;margin-top:10px;"></p>
+        </div>
+    </div>
+    <!-- Representative Modal -->
+    <div id="repModal" style="display:none; position:fixed; z-index:2200; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5);">
+        <div style="background:#fff; margin:10% auto; padding:20px; width:90%; max-width:400px; position:relative;">
+            <button id="closeRepModal" style="position:absolute; top:10px; right:10px;">&times;</button>
+            <h3 id="repModalTitle">University Representative Login</h3>
+            <input id="repUsername" type="text" placeholder="Username" style="width:100%;margin-bottom:10px;">
+            <input id="repPassword" type="password" placeholder="Password" style="width:100%;margin-bottom:10px;">
+            <select id="repUniversity" style="width:100%;margin-bottom:10px;display:none;"></select>
+            <button id="repSubmit" style="width:100%;">Log In</button>
+            <p style="text-align:center;margin:10px 0;">
+                <span id="toggleRepAuthText">Not registered?</span>
+                <a href="#" id="toggleRepAuthLink">Sign Up</a>
+            </p>
+            <p id="repMsg" style="color:red;text-align:center;margin-top:10px;"></p>
+        </div>
+    </div>
+    <!-- Manage Users Modal -->
+    <div id="manageUsersModal" style="display:none; position:fixed; z-index:3000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5);">
+        <div style="background:#fff; margin:5% auto; padding:20px; width:90%; max-width:600px; position:relative;">
+            <button id="closeManageUsersModal" style="position:absolute; top:10px; right:10px;">&times;</button>
+            <h3>Manage Users & Subscribers</h3>
+            <div id="usersList"></div>
+        </div>
+    </div>
+    <footer>
+        <p><a href="https://www.moe.go.kr">Ministry of Education</a></p>
+        <p>Contact info: info@koreanuniversitiesinfo.com</p>
+        <p>Disclaimer: This website is for informational purposes only.</p>
+        <p><a href="#" id="repLink" style="font-weight:bold;">University Representative?</a></p>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/filters.js"></script>
+    <script type="module" src="js/modal.js"></script>
+    <script type="module" src="js/utils.js"></script>
+</body>
+</html>
