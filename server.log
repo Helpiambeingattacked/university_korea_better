@@ -2,3 +2,12 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 127.0.0.1 - - [07/Jun/2025 03:47:54] "HEAD / HTTP/1.1" 200 -
 127.0.0.1 - - [07/Jun/2025 03:48:29] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [07/Jun/2025 03:48:33] "GET /src/data/universities_auto.json HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET /src/css/main.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET /src/js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET /src/js/university-manager.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET /src/js/ui-manager.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET /src/js/user-manager.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET /src/js/search-manager.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET /src/js/theme-manager.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Jun/2025 03:50:12] "GET /src/data/universities_auto.json HTTP/1.1" 200 -
