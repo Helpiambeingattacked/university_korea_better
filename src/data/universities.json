@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Seoul National University",
+    "type": "National",
+    "region": "Seoul",
+    "description": "South Korea's top national university known for excellence in research and education.",
+    "image": "snu.png",
+    "website": "https://www.snu.ac.kr"
+  },
+  {
+    "name": "Yonsei University",
+    "type": "Private",
+    "region": "Seoul",
+    "description": "Prestigious private university and a member of SKY universities.",
+    "image": "yonsei.png",
+    "website": "https://www.yonsei.ac.kr"
+  },
+  {
+    "name": "Korea Advanced Institute of Science and Technology",
+    "type": "National",
+    "region": "Daejeon",
+    "description": "Leading research university specializing in science and technology.",
+    "image": "kaist.png",
+    "website": "https://www.kaist.ac.kr"
+  },
+  {
+    "name": "Pohang University of Science and Technology",
+    "type": "Private",
+    "region": "Pohang",
+    "description": "Known for its engineering and science programs.",
+    "image": "postech.png",
+    "website": "https://www.postech.ac.kr"
+  },
+  {
+    "name": "Chonnam National University",
+    "type": "National",
+    "region": "Gwangju",
+    "description": "A comprehensive university with a strong emphasis on research.",
+    "image": "cnu.png",
+    "website": "https://www.jnu.ac.kr"
+  },
+  {
+    "name": "Sungkyunkwan University",
+    "type": "Private",
+    "region": "Seoul",
+    "description": "One of the oldest universities in Korea, known for its humanities and social sciences.",
+    "image": "skku.png",
+    "website": "https://www.skku.edu"
+  },
+  {
+    "name": "Hanyang University",
+    "type": "Private",
+    "region": "Seoul",
+    "description": "A leading private university with a strong engineering program.",
+    "image": "hanyang.png",
+    "website": "https://www.hanyang.ac.kr"
+  },
+  {
+    "name": "Inha University",
+    "type": "Private",
+    "region": "Incheon",
+    "description": "Known for its engineering and international programs.",
+    "image": "inha.png",
+    "website": "https://www.inha.ac.kr"
+  },
+  {
+    "name": "Konkuk University",
+    "type": "Private",
+    "region": "Seoul",
+    "description": "A well-known private university in Seoul.",
+    "image": "konkuk.png",
+    "website": "https://www.konkuk.ac.kr"
+  }
+]

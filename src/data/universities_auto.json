@@ -1,0 +1,425 @@
+[
+  {
+    "rank": "1",
+    "name": "Seoul National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Seoul_national_university_emblem.svg/180px-Seoul_national_university_emblem.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "2",
+    "name": "Korea University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Korea_University_Global_Symbol.svg/150px-Korea_University_Global_Symbol.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "3",
+    "name": "Yonsei University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/YonseiUniversityEmblem.svg/150px-YonseiUniversityEmblem.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "4",
+    "name": "Chonnam National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Chonnam_National_University_logo.svg/150px-Chonnam_National_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "5",
+    "name": "Mokpo National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Mokpo_National_University%2C_South_Jeolla_Province.jpg/250px-Mokpo_National_University%2C_South_Jeolla_Province.jpg",
+    "website": ""
+  },
+  {
+    "rank": "6",
+    "name": "Chung-Ang University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/CAU_emblem.png/250px-CAU_emblem.png",
+    "website": ""
+  },
+  {
+    "rank": "7",
+    "name": "Hanyang University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Hanyang_University_new_UI.svg/170px-Hanyang_University_new_UI.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "8",
+    "name": "Sehan University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "",
+    "website": ""
+  },
+  {
+    "rank": "9",
+    "name": "Sunchon National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Scuniv_sig.png/180px-Scuniv_sig.png",
+    "website": ""
+  },
+  {
+    "rank": "10",
+    "name": "Dongshin University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "",
+    "website": ""
+  },
+  {
+    "rank": "11",
+    "name": "Hanlyo University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "",
+    "website": ""
+  },
+  {
+    "rank": "12",
+    "name": "Mokpo National Maritime University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "",
+    "website": ""
+  },
+  {
+    "rank": "13",
+    "name": "Kyung Hee University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kyung_Hee_University_Logo.svg/250px-Kyung_Hee_University_Logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "14",
+    "name": "Sungkyunkwan University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Sungkyunkwan_University_seal.svg/250px-Sungkyunkwan_University_seal.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "15",
+    "name": "Dongguk University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Dongguk_University_logo.svg/250px-Dongguk_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "16",
+    "name": "Ewha Womans University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Ewha_Womans_University_logo.svg/250px-Ewha_Womans_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "17",
+    "name": "Dankook University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Dankook_University_emblem.svg/250px-Dankook_University_emblem.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "18",
+    "name": "Konkuk University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/Konkuk_University_logo.svg/250px-Konkuk_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "19",
+    "name": "Hongik University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Hongik_University.svg/250px-Hongik_University.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "20",
+    "name": "Sogang University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Sogang_University_emblem.png/250px-Sogang_University_emblem.png",
+    "website": ""
+  },
+  {
+    "rank": "21",
+    "name": "Inha University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Inha_University.svg/250px-Inha_University.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "22",
+    "name": "Myongji University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Myongji_University_logo.svg/250px-Myongji_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "23",
+    "name": "Wonkwang University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_WonKwang_University.svg/120px-Logo_WonKwang_University.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "24",
+    "name": "Pusan National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Pusan_National_University_logo.svg/250px-Pusan_National_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "25",
+    "name": "Soongsil University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Logo_of_soongsil_university.png",
+    "website": ""
+  },
+  {
+    "rank": "26",
+    "name": "Kyungpook National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Knuemblem00.jpg/250px-Knuemblem00.jpg",
+    "website": ""
+  },
+  {
+    "rank": "27",
+    "name": "Dong-a University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Donga.gif/250px-Donga.gif",
+    "website": ""
+  },
+  {
+    "rank": "28",
+    "name": "Korea National Defense University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "",
+    "website": ""
+  },
+  {
+    "rank": "29",
+    "name": "Chungnam National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Chungnam_National_University_logo.svg/250px-Chungnam_National_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "30",
+    "name": "Korea Maritime and Ocean University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Korea_Maritime_University.jpg/250px-Korea_Maritime_University.jpg",
+    "website": ""
+  },
+  {
+    "rank": "31",
+    "name": "Yeungnam University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Yeungnam_University_Emblem.svg/250px-Yeungnam_University_Emblem.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "32",
+    "name": "Kookmin University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/The_emblem_of_Kookmin_University.svg/250px-The_emblem_of_Kookmin_University.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "33",
+    "name": "Sejong University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Sejong_University_logo.svg/250px-Sejong_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "34",
+    "name": "Chosun University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Logo_for_Chosun_University.png/250px-Logo_for_Chosun_University.png",
+    "website": ""
+  },
+  {
+    "rank": "35",
+    "name": "Chonbuk National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Emblem_of_Jeonbuk_National_University.png/250px-Emblem_of_Jeonbuk_National_University.png",
+    "website": ""
+  },
+  {
+    "rank": "36",
+    "name": "University of Seoul",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/University_of_Seoul.svg/250px-University_of_Seoul.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "37",
+    "name": "Kyonggi University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Logo_of_Kyonggi_University.svg/250px-Logo_of_Kyonggi_University.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "38",
+    "name": "Keimyung University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/KMU_emblem.jpg/250px-KMU_emblem.jpg",
+    "website": ""
+  },
+  {
+    "rank": "39",
+    "name": "Sangmyung University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sangmyung_University.jpg/250px-Sangmyung_University.jpg",
+    "website": ""
+  },
+  {
+    "rank": "40",
+    "name": "Kyungsung University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Logo_of_Kyungsung_University.jpg/250px-Logo_of_Kyungsung_University.jpg",
+    "website": ""
+  },
+  {
+    "rank": "41",
+    "name": "Kyungnam University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Kyungnam_University_6.jpg/250px-Kyungnam_University_6.jpg",
+    "website": ""
+  },
+  {
+    "rank": "42",
+    "name": "Kangwon National University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/KNU-VerticalSignature.gif/250px-KNU-VerticalSignature.gif",
+    "website": ""
+  },
+  {
+    "rank": "43",
+    "name": "Soonchunhyang University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Soonchunhyang_University_logo.jpg/250px-Soonchunhyang_University_logo.jpg",
+    "website": ""
+  },
+  {
+    "rank": "44",
+    "name": "Pai Chai University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "",
+    "website": ""
+  },
+  {
+    "rank": "45",
+    "name": "Kwangwoon University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Kwangwoon_University_logo.svg/250px-Kwangwoon_University_logo.svg.png",
+    "website": ""
+  },
+  {
+    "rank": "46",
+    "name": "Jeonju University",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jeonju_University_Truth_Hall%2C_Take_a_photograph_in_the_Jeonju_University_Faculty_Hall.jpg/250px-Jeonju_University_Truth_Hall%2C_Take_a_photograph_in_the_Jeonju_University_Faculty_Hall.jpg",
+    "website": ""
+  },
+  {
+    "rank": "47",
+    "name": "Seoul National University Hospital",
+    "region": "",
+    "type": "",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/SNUHLogo.png/250px-SNUHLogo.png",
+    "website": ""
+  }
+]
