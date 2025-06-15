@@ -1,0 +1,36 @@
+Project Progress Summary
+
+What I Did
+
+UI Overhaul: Redesigned the interface for a more modern and visually appealing look, including smooth animations.
+Authentication & Roles: Fixed the login system and implemented a role hierarchy (guest, user, representative/moderator, admin) with unique permissions for each.
+UI Bug Fixes: Resolved issues such as the profile window opening in the wrong place, infinite stacking of modals, and dark mode toggling bugs.
+Admin Features: Added an admin login (username: admin, password: admin) with full permissions and an admin panel for editing universities and managing user data.
+User Experience: Improved navigation and transitions for a smoother user experience.
+
+What’s Missing / To Improve
+
+Navigation Links: Some buttons still redirect to the main page instead of their intended destinations.
+Database Completeness: The university database is not fully populated, though the app works with the current data.
+Security & OAuth: No real security or Google account integration yet; current authentication is basic and for demonstration only.
+Notifications: Real-time notifications are not implemented due to the lack of backend and OAuth.
+Minor CSS Issues: A few UI elements still need additional styling.
+
+APIs/Tools Used:
+
+Vanilla JavaScript (modular, ES6+)
+LocalStorage for data persistence
+FontAwesome for icons
+No external backend or third-party APIs yet
+
+What Succeeded:
+
+Role-based access control works as intended.
+Admin panel allows editing universities and user data.
+UI is responsive and interactive.
+
+What Failed or Needs Work:
+
+Some navigation and UI elements need further refinement.
+Security and real authentication are not implemented.
+Database and notification features are not production-ready.
