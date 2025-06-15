@@ -18,7 +18,7 @@ class App {
             search: ''
         };
         
-        this.currentSort = 'name-asc';
+        this.currentSort = 'name-asc'; // name-asc, name-desc, rank-asc, rank-desc
         this.currentPage = 1;
         this.itemsPerPage = 12;
         
@@ -50,24 +50,14 @@ class App {
         }
 
         try {
-            const response = await fetch('./src/data/universities_auto.json');
+            const response = await fetch('./src/data/universities.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
             this.universityManager.setUniversities(data);
         } catch (error) {
-            // Fallback to main universities.json
-            try {
-                const response = await fetch('./src/data/universities.json');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
-                this.universityManager.setUniversities(data);
-            } catch (fallbackError) {
-                throw new Error('Could not load university data from any source');
-            }
+            throw new Error('Could not load university data from universities.json');
         }
     }
 
@@ -76,6 +66,273 @@ class App {
         this.userManager.init();
         this.searchManager.init();
         this.themeManager.init();
+        this.setupLanguageToggle();
+    }
+
+    setupLanguageToggle() {
+        const languageToggle = document.getElementById('languageToggle');
+        if (!languageToggle) return;
+
+        let currentLanguage = localStorage.getItem('language') || 'en';
+        this.setLanguage(currentLanguage);
+
+        languageToggle.addEventListener('click', () => {
+            currentLanguage = currentLanguage === 'en' ? 'ko' : 'en';
+            localStorage.setItem('language', currentLanguage);
+            this.setLanguage(currentLanguage);
+        });
+
+        languageToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                languageToggle.click();
+            }
+        });
+    }
+
+    setLanguage(lang) {
+        const languageToggle = document.getElementById('languageToggle');
+        if (!languageToggle) return;
+
+        languageToggle.title = lang === 'ko' ? '영어로 전환' : 'Switch to Korean';
+
+        const translations = {
+            en: {
+                home: 'Home',
+                universities: 'Universities',
+                about: 'About',
+                explore: 'Explore Universities',
+                learnMore: 'Learn More',
+                universitiesTitle: 'Universities in Korea',
+                universitiesSubtitle: 'Discover institutions that shape the future',
+                region: 'Region',
+                allRegions: 'All Regions',
+                type: 'Type',
+                allTypes: 'All Types',
+                national: 'National',
+                private: 'Private',
+                specialized: 'Specialized',
+                international: 'International',
+                reset: 'Reset',
+                sortAZ: 'Sort A-Z',
+                sortZA: 'Sort Z-A',
+                loadMore: 'Load More Universities',
+                aboutTitle: 'About Korean Higher Education',
+                aboutText: "South Korea's higher education system is recognized globally for its excellence in technology, research, and innovation. With over 400 universities and colleges, Korea offers diverse educational opportunities for international students.",
+                research: 'Research Excellence',
+                researchText: 'World-class research facilities and cutting-edge technology programs',
+                global: 'Global Recognition',
+                globalText: 'Internationally accredited degrees and strong industry partnerships',
+                culture: 'Cultural Experience',
+                cultureText: 'Rich cultural heritage combined with modern innovation',
+                quickLinks: 'Quick Links',
+                universitiesLink: 'Universities',
+                programs: 'Programs',
+                admissions: 'Admissions',
+                scholarships: 'Scholarships',
+                resources: 'Resources',
+                ministry: 'Ministry of Education',
+                rep: 'University Representative',
+                studentGuide: 'Student Guide',
+                contactUs: 'Contact Us',
+                contact: 'Contact',
+                email: 'info@koreanuniversitiesinfo.com',
+                phone: '+82 2 1234 5678',
+                address: 'Seoul, South Korea',
+                loading: 'Loading universities...',
+                login: 'Login / Register',
+                favorites: 'My Favorites',
+                settings: 'Settings',
+                repRegister: 'Representative Register',
+                admin: 'Admin Panel',
+                changePassword: 'Change My Password'
+            },
+            ko: {
+                home: '홈',
+                universities: '대학교',
+                about: '소개',
+                explore: '대학교 탐색',
+                learnMore: '더 알아보기',
+                universitiesTitle: '대한민국 대학교',
+                universitiesSubtitle: '미래를 이끄는 기관을 발견하세요',
+                region: '지역',
+                allRegions: '전체 지역',
+                type: '유형',
+                allTypes: '전체 유형',
+                national: '국립',
+                private: '사립',
+                specialized: '특수',
+                international: '국제',
+                reset: '초기화',
+                sortAZ: '가나다순 정렬',
+                sortZA: '역순 정렬',
+                loadMore: '대학교 더 보기',
+                aboutTitle: '한국 고등교육 소개',
+                aboutText: '한국의 고등교육은 기술, 연구, 혁신에서 세계적으로 인정받고 있습니다. 400개 이상의 대학과 단과대학이 있어 다양한 교육 기회를 제공합니다.',
+                research: '연구 우수성',
+                researchText: '세계적 수준의 연구 시설과 첨단 기술 프로그램',
+                global: '글로벌 인정',
+                globalText: '국제적으로 인증된 학위와 강력한 산업 협력',
+                culture: '문화 체험',
+                cultureText: '풍부한 문화유산과 현대적 혁신의 결합',
+                quickLinks: '바로가기',
+                universitiesLink: '대학교',
+                programs: '프로그램',
+                admissions: '입학',
+                scholarships: '장학금',
+                resources: '자료실',
+                ministry: '교육부',
+                rep: '대학 대표자',
+                studentGuide: '학생 가이드',
+                contactUs: '문의하기',
+                contact: '연락처',
+                email: 'info@koreanuniversitiesinfo.com',
+                phone: '+82 2 1234 5678',
+                address: '대한민국 서울',
+                loading: '대학교 정보를 불러오는 중...',
+                login: '로그인 / 회원가입',
+                favorites: '내 즐겨찾기',
+                settings: '설정',
+                repRegister: '대표자 등록',
+                admin: '관리자 패널',
+                changePassword: '비밀번호 변경'
+            }
+        };
+
+        const t = translations[lang];
+
+        // Navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+        if (navLinks.length >= 3) {
+            navLinks[0].querySelector('span').textContent = t.home;
+            navLinks[1].querySelector('span').textContent = t.universities;
+            navLinks[2].querySelector('span').textContent = t.about;
+        }
+
+        // Hero section
+        const heroTitle = document.querySelector('.hero-title');
+        if (heroTitle) {
+            heroTitle.childNodes[0].textContent = lang === 'ko' ? '당신의 미래를 발견하세요 ' : 'Discover Your Future at ';
+        }
+        const heroSubtitle = document.querySelector('.hero-subtitle');
+        if (heroSubtitle) heroSubtitle.textContent = t.universitiesSubtitle;
+
+        // Hero actions
+        const exploreBtn = document.getElementById('exploreBtn');
+        if (exploreBtn) exploreBtn.innerHTML = `<i class="fas fa-compass"></i> ${t.explore}`;
+        const learnMoreBtn = document.getElementById('learnMoreBtn');
+        if (learnMoreBtn) learnMoreBtn.innerHTML = `<i class="fas fa-play"></i> ${t.learnMore}`;
+
+        // Universities section
+        const universitiesTitle = document.querySelector('.section-title');
+        if (universitiesTitle) universitiesTitle.textContent = t.universitiesTitle;
+        const universitiesSubtitle = document.querySelector('.section-subtitle');
+        if (universitiesSubtitle) universitiesSubtitle.textContent = t.universitiesSubtitle;
+
+        // Filters
+        const regionLabel = document.querySelector('.filter-label');
+        if (regionLabel) regionLabel.textContent = t.region;
+        const regionBtns = document.querySelectorAll('#regionFilters .filter-btn');
+        if (regionBtns.length > 0) regionBtns[0].textContent = t.allRegions;
+
+        const typeLabels = document.querySelectorAll('.filter-label');
+        if (typeLabels.length > 1) typeLabels[1].textContent = t.type;
+        const typeBtns = document.querySelectorAll('#typeFilters .filter-btn');
+        if (typeBtns.length > 0) typeBtns[0].textContent = t.allTypes;
+        if (typeBtns.length > 1) typeBtns[1].textContent = t.national;
+        if (typeBtns.length > 2) typeBtns[2].textContent = t.private;
+        if (typeBtns.length > 3) typeBtns[3].textContent = t.specialized;
+        if (typeBtns.length > 4) typeBtns[4].textContent = t.international;
+
+        // Filter actions
+        const resetBtn = document.getElementById('resetFilters');
+        if (resetBtn) resetBtn.innerHTML = `<i class="fas fa-refresh"></i> ${t.reset}`;
+        const sortToggle = document.getElementById('sortToggle');
+        if (sortToggle) {
+            sortToggle.innerHTML = `<i class="fas fa-sort"></i> ${this.currentSort === 'name-asc' ? t.sortAZ : t.sortZA}`;
+        }
+
+        // Load more
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        if (loadMoreBtn) loadMoreBtn.innerHTML = `<i class="fas fa-plus"></i> ${t.loadMore}`;
+
+        // About section
+        const aboutTitle = document.querySelector('#aboutSection h2');
+        if (aboutTitle) aboutTitle.textContent = t.aboutTitle;
+        const aboutText = document.querySelector('#aboutSection p');
+        if (aboutText) aboutText.textContent = t.aboutText;
+
+        // Features
+        const featureCards = document.querySelectorAll('.feature-card');
+        if (featureCards.length > 0) {
+            featureCards[0].querySelector('h3').textContent = t.research;
+            featureCards[0].querySelector('p').textContent = t.researchText;
+        }
+        if (featureCards.length > 1) {
+            featureCards[1].querySelector('h3').textContent = t.global;
+            featureCards[1].querySelector('p').textContent = t.globalText;
+        }
+        if (featureCards.length > 2) {
+            featureCards[2].querySelector('h3').textContent = t.culture;
+            featureCards[2].querySelector('p').textContent = t.cultureText;
+        }
+
+        // Footer
+        const quickLinks = document.querySelector('.footer-section ul');
+        if (quickLinks) {
+            const links = quickLinks.querySelectorAll('li a');
+            if (links.length > 0) links[0].textContent = t.universitiesLink;
+            if (links.length > 1) links[1].textContent = t.programs;
+            if (links.length > 2) links[2].textContent = t.admissions;
+            if (links.length > 3) links[3].textContent = t.scholarships;
+        }
+        const footerSections = document.querySelectorAll('.footer-section h4');
+        if (footerSections.length > 0) footerSections[0].textContent = 'Korean Universities Hub';
+        if (footerSections.length > 1) footerSections[1].textContent = t.quickLinks;
+        if (footerSections.length > 2) footerSections[2].textContent = t.resources;
+        if (footerSections.length > 3) footerSections[3].textContent = t.contact;
+
+        // Footer resources
+        const resourceLinks = document.querySelectorAll('.footer-section ul');
+        if (resourceLinks.length > 1) {
+            const resLinks = resourceLinks[1].querySelectorAll('li a');
+            if (resLinks.length > 0) resLinks[0].textContent = t.ministry;
+            if (resLinks.length > 1) resLinks[1].textContent = t.rep;
+            if (resLinks.length > 2) resLinks[2].textContent = t.studentGuide;
+            if (resLinks.length > 3) resLinks[3].textContent = t.contactUs;
+        }
+
+        // Footer contact
+        const contactSection = document.querySelectorAll('.footer-section')[3];
+        if (contactSection) {
+            const ps = contactSection.querySelectorAll('p');
+            if (ps.length > 0) ps[0].innerHTML = `<i class="fas fa-envelope"></i> ${t.email}`;
+            if (ps.length > 1) ps[1].innerHTML = `<i class="fas fa-phone"></i> ${t.phone}`;
+            if (ps.length > 2) ps[2].innerHTML = `<i class="fas fa-map-marker-alt"></i> ${t.address}`;
+        }
+
+        // Loading spinner
+        const loadingSpinner = document.getElementById('loadingSpinner');
+        if (loadingSpinner) {
+            const p = loadingSpinner.querySelector('p');
+            if (p) p.textContent = t.loading;
+        }
+
+        // User menu
+        const loginBtn = document.getElementById('loginBtn');
+        if (loginBtn) loginBtn.querySelector('span').textContent = t.login;
+        const favoritesBtn = document.getElementById('favoritesBtn');
+        if (favoritesBtn) favoritesBtn.querySelector('span').textContent = t.favorites;
+        const settingsBtn = document.getElementById('settingsBtn');
+        if (settingsBtn) settingsBtn.querySelector('span').textContent = t.settings;
+        const repRegisterBtn = document.getElementById('repRegisterBtn');
+        if (repRegisterBtn) repRegisterBtn.querySelector('span').textContent = t.repRegister;
+        const adminBtn = document.getElementById('adminBtn');
+        if (adminBtn) adminBtn.querySelector('span').textContent = t.admin;
+        const changePasswordBtn = document.getElementById('changePasswordBtn');
+        if (changePasswordBtn) changePasswordBtn.textContent = t.changePassword;
+
+        localStorage.setItem('language', lang);
     }
 
     setupEventListeners() {
@@ -170,9 +427,14 @@ class App {
             this.resetFilters();
         });
 
-        // Sort toggle
+        // Sort toggle (A-Z/Z-A)
         document.getElementById('sortToggle')?.addEventListener('click', (e) => {
             this.toggleSort(e.currentTarget);
+        });
+
+        // Sort by Rank toggle
+        document.getElementById('sortRankToggle')?.addEventListener('click', (e) => {
+            this.toggleRankSort(e.currentTarget);
         });
 
         // Load more
@@ -215,6 +477,24 @@ class App {
             menu.style.top = `${rect.bottom + 8}px`; // 8px gap below the button
             menu.style.right = `${window.innerWidth - rect.right}px`;
             menu.classList.toggle('active');
+
+            // Add document click listener to close menu when clicking outside
+            const closeMenuOnClickAway = (event) => {
+                if (
+                    !menu.contains(event.target) &&
+                    event.target !== btn
+                ) {
+                    menu.classList.remove('active');
+                    document.removeEventListener('mousedown', closeMenuOnClickAway);
+                }
+            };
+
+            // Only add listener if menu is now open
+            if (menu.classList.contains('active')) {
+                setTimeout(() => {
+                    document.addEventListener('mousedown', closeMenuOnClickAway);
+                }, 0);
+            }
         });
 
         // Favorites Button
@@ -370,7 +650,23 @@ class App {
             this.currentSort = 'name-asc';
             buttonElement.innerHTML = '<i class="fas fa-sort"></i> Sort A-Z';
         }
-        
+        // Reset rank sort button text
+        const rankBtn = document.getElementById('sortRankToggle');
+        if (rankBtn) rankBtn.innerHTML = '<i class="fas fa-sort-numeric-down"></i> Sort by Rank';
+        this.renderUniversities();
+    }
+
+    toggleRankSort(buttonElement) {
+        if (this.currentSort === 'rank-asc') {
+            this.currentSort = 'rank-desc';
+            buttonElement.innerHTML = '<i class="fas fa-sort-numeric-up"></i> Rank High-Low';
+        } else {
+            this.currentSort = 'rank-asc';
+            buttonElement.innerHTML = '<i class="fas fa-sort-numeric-down"></i> Rank Low-High';
+        }
+        // Reset A-Z sort button text
+        const azBtn = document.getElementById('sortToggle');
+        if (azBtn) azBtn.innerHTML = '<i class="fas fa-sort"></i> Sort A-Z';
         this.renderUniversities();
     }
 
@@ -420,8 +716,20 @@ class App {
         universities.sort((a, b) => {
             if (this.currentSort === 'name-asc') {
                 return a.name.localeCompare(b.name);
-            } else {
+            } else if (this.currentSort === 'name-desc') {
                 return b.name.localeCompare(a.name);
+            } else if (this.currentSort === 'rank-asc') {
+                // Sort by rank ascending, fallback to bottom if no rank
+                const rankA = a.rank ? parseInt(a.rank) : Number.MAX_SAFE_INTEGER;
+                const rankB = b.rank ? parseInt(b.rank) : Number.MAX_SAFE_INTEGER;
+                return rankA - rankB;
+            } else if (this.currentSort === 'rank-desc') {
+                // Sort by rank descending, fallback to bottom if no rank
+                const rankA = a.rank ? parseInt(a.rank) : Number.MAX_SAFE_INTEGER;
+                const rankB = b.rank ? parseInt(b.rank) : Number.MAX_SAFE_INTEGER;
+                return rankB - rankA;
+            } else {
+                return 0;
             }
         });
 
@@ -436,6 +744,10 @@ class App {
         const favoriteStatus = this.userManager.isFavorite(university.name);
         const logoSrc = this.getUniversityLogo(university);
 
+        // Build Google Maps search URL
+        const mapsQuery = encodeURIComponent(`${university.name}, ${university.region}, South Korea`);
+        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+
         card.innerHTML = `
             <div class="card-header">
                 <div class="university-logo">
@@ -449,6 +761,9 @@ class App {
                 <div class="university-location">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>${university.region}</span>
+                    <a href="${mapsUrl}" target="_blank" class="map-link" title="View on Google Maps" style="margin-left:8px;">
+                        <i class="fas fa-map"></i> Map
+                    </a>
                 </div>
                 <p class="university-description">
                     ${university.description || 'Prestigious university in South Korea offering excellent education and research opportunities.'}

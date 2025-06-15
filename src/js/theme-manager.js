@@ -177,6 +177,12 @@ export class ThemeManager {
     }
 
     showThemeChangeNotification(theme) {
+        // Remove any existing notification first
+        const existing = document.querySelector('.theme-notification');
+        if (existing) {
+            existing.parentElement.removeChild(existing);
+        }
+
         const messages = {
             light: 'Switched to Light Mode',
             dark: 'Switched to Dark Mode',
@@ -223,7 +229,7 @@ export class ThemeManager {
         setTimeout(() => {
             notification.style.transform = 'translateX(400px)';
             notification.style.opacity = '0';
-            
+
             setTimeout(() => {
                 if (notification.parentElement) {
                     notification.parentElement.removeChild(notification);

@@ -1,19 +1,426 @@
 [
   {
+    "rank": "1",
     "name": "Seoul National University",
-    "type": "National",
     "region": "Seoul",
+    "type": "National",
     "description": "South Korea's top national university known for excellence in research and education.",
-    "image": "snu.png",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Seoul_national_university_emblem.svg/180px-Seoul_national_university_emblem.svg.png",
     "website": "https://www.snu.ac.kr"
   },
   {
-    "name": "Yonsei University",
-    "type": "Private",
+    "rank": "2",
+    "name": "Korea University",
     "region": "Seoul",
+    "type": "Private",
+    "description": "One of the oldest and most prestigious private universities in Korea.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Korea_University_Global_Symbol.svg/150px-Korea_University_Global_Symbol.svg.png",
+    "website": "https://www.korea.ac.kr"
+  },
+  {
+    "rank": "3",
+    "name": "Yonsei University",
+    "region": "Seoul",
+    "type": "Private",
     "description": "Prestigious private university and a member of SKY universities.",
-    "image": "yonsei.png",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/YonseiUniversityEmblem.svg/150px-YonseiUniversityEmblem.svg.png",
     "website": "https://www.yonsei.ac.kr"
+  },
+  {
+    "rank": "4",
+    "name": "Chonnam National University",
+    "region": "Gwangju",
+    "type": "National",
+    "description": "A comprehensive university with a strong emphasis on research.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Chonnam_National_University_logo.svg/150px-Chonnam_National_University_logo.svg.png",
+    "website": "https://www.jnu.ac.kr"
+  },
+  {
+    "rank": "5",
+    "name": "Mokpo National University",
+    "region": "Jeollanam-do",
+    "type": "National",
+    "description": "A national university located in Muan and Mokpo, Jeollanam-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Mokpo_National_University%2C_South_Jeolla_Province.jpg/250px-Mokpo_National_University%2C_South_Jeolla_Province.jpg",
+    "website": "https://www.mokpo.ac.kr"
+  },
+  {
+    "rank": "6",
+    "name": "Chung-Ang University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A major private university in Seoul, known for its arts and media programs.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/CAU_emblem.png/250px-CAU_emblem.png",
+    "website": "https://www.cau.ac.kr"
+  },
+  {
+    "rank": "7",
+    "name": "Hanyang University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A leading private university with a strong engineering program.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Hanyang_University_new_UI.svg/170px-Hanyang_University_new_UI.svg.png",
+    "website": "https://www.hanyang.ac.kr"
+  },
+  {
+    "rank": "8",
+    "name": "Sehan University",
+    "region": "Jeollanam-do",
+    "type": "Private",
+    "description": "A private university in Yeongam, Jeollanam-do.",
+    "image": "",
+    "website": "https://www.sehan.ac.kr"
+  },
+  {
+    "rank": "9",
+    "name": "Sunchon National University",
+    "region": "Jeollanam-do",
+    "type": "National",
+    "description": "A national university in Suncheon, Jeollanam-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Scuniv_sig.png/180px-Scuniv_sig.png",
+    "website": "https://www.scnu.ac.kr"
+  },
+  {
+    "rank": "10",
+    "name": "Dongshin University",
+    "region": "Jeollanam-do",
+    "type": "Private",
+    "description": "A private university in Naju, Jeollanam-do.",
+    "image": "",
+    "website": "https://www.dsu.ac.kr"
+  },
+  {
+    "rank": "11",
+    "name": "Hanlyo University",
+    "region": "Jeollanam-do",
+    "type": "Private",
+    "description": "A private university in Yeosu, Jeollanam-do.",
+    "image": "",
+    "website": "https://www.hanlyo.ac.kr"
+  },
+  {
+    "rank": "12",
+    "name": "Mokpo National Maritime University",
+    "region": "Jeollanam-do",
+    "type": "National",
+    "description": "A national university specializing in maritime studies.",
+    "image": "",
+    "website": "https://www.mmu.ac.kr"
+  },
+  {
+    "rank": "13",
+    "name": "Kyung Hee University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private university in Seoul, known for its global campus and medical programs.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kyung_Hee_University_Logo.svg/250px-Kyung_Hee_University_Logo.svg.png",
+    "website": "https://www.khu.ac.kr"
+  },
+  {
+    "rank": "14",
+    "name": "Sungkyunkwan University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "One of the oldest universities in Korea, known for its humanities and social sciences.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Sungkyunkwan_University_seal.svg/250px-Sungkyunkwan_University_seal.svg.png",
+    "website": "https://www.skku.edu"
+  },
+  {
+    "rank": "15",
+    "name": "Dongguk University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private university in Seoul, known for Buddhist studies.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Dongguk_University_logo.svg/250px-Dongguk_University_logo.svg.png",
+    "website": "https://www.dongguk.edu"
+  },
+  {
+    "rank": "16",
+    "name": "Ewha Womans University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "The world's largest female educational institute.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Ewha_Womans_University_logo.svg/250px-Ewha_Womans_University_logo.svg.png",
+    "website": "https://www.ewha.ac.kr"
+  },
+  {
+    "rank": "17",
+    "name": "Dankook University",
+    "region": "Gyeonggi-do",
+    "type": "Private",
+    "description": "A private university with campuses in Yongin and Cheonan.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Dankook_University_emblem.svg/250px-Dankook_University_emblem.svg.png",
+    "website": "https://www.dankook.ac.kr"
+  },
+  {
+    "rank": "18",
+    "name": "Konkuk University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A well-known private university in Seoul.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/Konkuk_University_logo.svg/250px-Konkuk_University_logo.svg.png",
+    "website": "https://www.konkuk.ac.kr"
+  },
+  {
+    "rank": "19",
+    "name": "Hongik University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private university in Seoul, famous for its art and design programs.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Hongik_University.svg/250px-Hongik_University.svg.png",
+    "website": "https://www.hongik.ac.kr"
+  },
+  {
+    "rank": "20",
+    "name": "Sogang University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private research university in Seoul, known for liberal arts.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Sogang_University_emblem.png/250px-Sogang_University_emblem.png",
+    "website": "https://www.sogang.ac.kr"
+  },
+  {
+    "rank": "21",
+    "name": "Inha University",
+    "region": "Incheon",
+    "type": "Private",
+    "description": "Known for its engineering and international programs.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Inha_University.svg/250px-Inha_University.svg.png",
+    "website": "https://www.inha.ac.kr"
+  },
+  {
+    "rank": "22",
+    "name": "Myongji University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private university with campuses in Seoul and Yongin.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Myongji_University_logo.svg/250px-Myongji_University_logo.svg.png",
+    "website": "https://www.mju.ac.kr"
+  },
+  {
+    "rank": "23",
+    "name": "Wonkwang University",
+    "region": "Jeollabuk-do",
+    "type": "Private",
+    "description": "A private university in Iksan, Jeollabuk-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_WonKwang_University.svg/120px-Logo_WonKwang_University.svg.png",
+    "website": "https://www.wku.ac.kr"
+  },
+  {
+    "rank": "24",
+    "name": "Pusan National University",
+    "region": "Busan",
+    "type": "National",
+    "description": "A major national university in Busan.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Pusan_National_University_logo.svg/250px-Pusan_National_University_logo.svg.png",
+    "website": "https://www.pusan.ac.kr"
+  },
+  {
+    "rank": "25",
+    "name": "Soongsil University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private Christian university in Seoul.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Logo_of_soongsil_university.png",
+    "website": "https://www.ssu.ac.kr"
+  },
+  {
+    "rank": "26",
+    "name": "Kyungpook National University",
+    "region": "Daegu",
+    "type": "National",
+    "description": "A national university in Daegu.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Knuemblem00.jpg/250px-Knuemblem00.jpg",
+    "website": "https://www.knu.ac.kr"
+  },
+  {
+    "rank": "27",
+    "name": "Dong-a University",
+    "region": "Busan",
+    "type": "Private",
+    "description": "A private university in Busan.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Donga.gif/250px-Donga.gif",
+    "website": "https://www.donga.ac.kr"
+  },
+  {
+    "rank": "28",
+    "name": "Korea National Defense University",
+    "region": "Gyeonggi-do",
+    "type": "National",
+    "description": "A national university specializing in defense studies.",
+    "image": "",
+    "website": "https://www.kndu.ac.kr"
+  },
+  {
+    "rank": "29",
+    "name": "Chungnam National University",
+    "region": "Daejeon",
+    "type": "National",
+    "description": "A national university in Daejeon.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Chungnam_National_University_logo.svg/250px-Chungnam_National_University_logo.svg.png",
+    "website": "https://www.cnu.ac.kr"
+  },
+  {
+    "rank": "30",
+    "name": "Korea Maritime and Ocean University",
+    "region": "Busan",
+    "type": "National",
+    "description": "A national university specializing in maritime studies.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Korea_Maritime_University.jpg/250px-Korea_Maritime_University.jpg",
+    "website": "https://www.kmou.ac.kr"
+  },
+  {
+    "rank": "31",
+    "name": "Yeungnam University",
+    "region": "Gyeongsangbuk-do",
+    "type": "Private",
+    "description": "A private university in Gyeongsan, Gyeongsangbuk-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Yeungnam_University_Emblem.svg/250px-Yeungnam_University_Emblem.svg.png",
+    "website": "https://www.yu.ac.kr"
+  },
+  {
+    "rank": "32",
+    "name": "Kookmin University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private university in Seoul.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/The_emblem_of_Kookmin_University.svg/250px-The_emblem_of_Kookmin_University.svg.png",
+    "website": "https://www.kookmin.ac.kr"
+  },
+  {
+    "rank": "33",
+    "name": "Sejong University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private university in Seoul.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Sejong_University_logo.svg/250px-Sejong_University_logo.svg.png",
+    "website": "https://www.sejong.ac.kr"
+  },
+  {
+    "rank": "34",
+    "name": "Chosun University",
+    "region": "Gwangju",
+    "type": "Private",
+    "description": "A private university in Gwangju.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Logo_for_Chosun_University.png/250px-Logo_for_Chosun_University.png",
+    "website": "https://www.chosun.ac.kr"
+  },
+  {
+    "rank": "35",
+    "name": "Chonbuk National University",
+    "region": "Jeollabuk-do",
+    "type": "National",
+    "description": "A national university in Jeonju, Jeollabuk-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Emblem_of_Jeonbuk_National_University.png/250px-Emblem_of_Jeonbuk_National_University.png",
+    "website": "https://www.jbnu.ac.kr"
+  },
+  {
+    "rank": "36",
+    "name": "University of Seoul",
+    "region": "Seoul",
+    "type": "Public",
+    "description": "A public university in Seoul.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/University_of_Seoul.svg/250px-University_of_Seoul.svg.png",
+    "website": "https://www.uos.ac.kr"
+  },
+  {
+    "rank": "37",
+    "name": "Kyonggi University",
+    "region": "Gyeonggi-do",
+    "type": "Private",
+    "description": "A private university with campuses in Suwon and Seoul.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Logo_of_Kyonggi_University.svg/250px-Logo_of_Kyonggi_University.svg.png",
+    "website": "https://www.kyonggi.ac.kr"
+  },
+  {
+    "rank": "38",
+    "name": "Keimyung University",
+    "region": "Daegu",
+    "type": "Private",
+    "description": "A private university in Daegu.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/KMU_emblem.jpg/250px-KMU_emblem.jpg",
+    "website": "https://www.kmu.ac.kr"
+  },
+  {
+    "rank": "39",
+    "name": "Sangmyung University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private university with campuses in Seoul and Cheonan.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sangmyung_University.jpg/250px-Sangmyung_University.jpg",
+    "website": "https://www.smu.ac.kr"
+  },
+  {
+    "rank": "40",
+    "name": "Kyungsung University",
+    "region": "Busan",
+    "type": "Private",
+    "description": "A private university in Busan.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Logo_of_Kyungsung_University.jpg/250px-Logo_of_Kyungsung_University.jpg",
+    "website": "https://www.ks.ac.kr"
+  },
+  {
+    "rank": "41",
+    "name": "Kyungnam University",
+    "region": "Gyeongsangnam-do",
+    "type": "Private",
+    "description": "A private university in Changwon, Gyeongsangnam-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Kyungnam_University_6.jpg/250px-Kyungnam_University_6.jpg",
+    "website": "https://www.kyungnam.ac.kr"
+  },
+  {
+    "rank": "42",
+    "name": "Kangwon National University",
+    "region": "Gangwon-do",
+    "type": "National",
+    "description": "A national university in Chuncheon, Gangwon-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/KNU-VerticalSignature.gif/250px-KNU-VerticalSignature.gif",
+    "website": "https://www.kangwon.ac.kr"
+  },
+  {
+    "rank": "43",
+    "name": "Soonchunhyang University",
+    "region": "Chungcheongnam-do",
+    "type": "Private",
+    "description": "A private university in Asan, Chungcheongnam-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Soonchunhyang_University_logo.jpg/250px-Soonchunhyang_University_logo.jpg",
+    "website": "https://www.sch.ac.kr"
+  },
+  {
+    "rank": "44",
+    "name": "Pai Chai University",
+    "region": "Daejeon",
+    "type": "Private",
+    "description": "A private university in Daejeon.",
+    "image": "",
+    "website": "https://www.pcu.ac.kr"
+  },
+  {
+    "rank": "45",
+    "name": "Kwangwoon University",
+    "region": "Seoul",
+    "type": "Private",
+    "description": "A private university in Seoul, known for engineering and IT.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Kwangwoon_University_logo.svg/250px-Kwangwoon_University_logo.svg.png",
+    "website": "https://www.kw.ac.kr"
+  },
+  {
+    "rank": "46",
+    "name": "Jeonju University",
+    "region": "Jeollabuk-do",
+    "type": "Private",
+    "description": "A private Christian university in Jeonju, Jeollabuk-do.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jeonju_University_Truth_Hall%2C_Take_a_photograph_in_the_Jeonju_University_Faculty_Hall.jpg/250px-Jeonju_University_Truth_Hall%2C_Take_a_photograph_in_the_Jeonju_University_Faculty_Hall.jpg",
+    "website": "https://www.jj.ac.kr"
+  },
+  {
+    "rank": "47",
+    "name": "Seoul National University Hospital",
+    "region": "Seoul",
+    "type": "National",
+    "description": "The hospital affiliated with Seoul National University.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/SNUHLogo.png/250px-SNUHLogo.png",
+    "website": "https://www.snuh.org"
   },
   {
     "name": "Korea Advanced Institute of Science and Technology",
@@ -30,45 +437,5 @@
     "description": "Known for its engineering and science programs.",
     "image": "postech.png",
     "website": "https://www.postech.ac.kr"
-  },
-  {
-    "name": "Chonnam National University",
-    "type": "National",
-    "region": "Gwangju",
-    "description": "A comprehensive university with a strong emphasis on research.",
-    "image": "cnu.png",
-    "website": "https://www.jnu.ac.kr"
-  },
-  {
-    "name": "Sungkyunkwan University",
-    "type": "Private",
-    "region": "Seoul",
-    "description": "One of the oldest universities in Korea, known for its humanities and social sciences.",
-    "image": "skku.png",
-    "website": "https://www.skku.edu"
-  },
-  {
-    "name": "Hanyang University",
-    "type": "Private",
-    "region": "Seoul",
-    "description": "A leading private university with a strong engineering program.",
-    "image": "hanyang.png",
-    "website": "https://www.hanyang.ac.kr"
-  },
-  {
-    "name": "Inha University",
-    "type": "Private",
-    "region": "Incheon",
-    "description": "Known for its engineering and international programs.",
-    "image": "inha.png",
-    "website": "https://www.inha.ac.kr"
-  },
-  {
-    "name": "Konkuk University",
-    "type": "Private",
-    "region": "Seoul",
-    "description": "A well-known private university in Seoul.",
-    "image": "konkuk.png",
-    "website": "https://www.konkuk.ac.kr"
   }
 ]
