@@ -9,7 +9,7 @@ class KoreanUniversitiesHubTest(unittest.TestCase):
     """Test suite for the Korean Universities Hub website"""
     
     def setUp(self):
-        """Set up test environment"""
+        """Set up test environment(you may need to adjust it based on which port it decides to open it on. I chose default but it might still not work.)"""
         self.base_url = "http://localhost:5500"
         
     def test_homepage_accessibility(self):
